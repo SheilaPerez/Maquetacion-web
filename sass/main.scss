@@ -1,0 +1,168 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap";
+
+$primary: #5265E1;
+$danger: #FA5959;
+
+.greyFont {
+    color: grey;
+}
+
+.container {
+ padding: 0 30px 0 30px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px 0 100px 0;
+}
+.navbar {
+    display: inline-block;
+    position: unset;
+}
+    
+.logo {
+    display: inline-block;
+} 
+
+.navbar-brand {
+    border: none;
+    background-color: white;
+    margin: 0;
+}
+
+.iconHamburguer {
+    width: 25px;
+}
+
+.logoBookmark{
+    width:221px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.imgHero{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.blueContainer {
+    background-color: $primary;
+    width: 86%; 
+    height: 79%;
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    z-index: 1;
+}
+
+.heroContainer {
+    position: relative;
+}
+
+.rounded-start {
+    border-bottom-left-radius: 5rem !important;
+}
+
+.title {
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.allSubtitle {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.646);
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.getButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-lg {
+    font-size: 19px;
+    letter-spacing: 1px;
+    background-color: $primary;
+}
+
+.nav {
+    flex-direction: column;
+    align-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .logoBookmark{
+        width:120px;
+    }
+
+    .iconHamburguer {
+        display: none;
+    }
+
+    .btn-danger {
+        background-color: $danger;
+        border-color: $danger;
+    }
+
+    .loginBtn {
+        font-size: 13px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 2rem;
+        font-size: 13px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 35px;
+    }
+
+    .allSubtitle {
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .blueContainer {
+        width: 82%;
+        height: 77%;
+        top: 30%;
+        left: 30%;
+    }
+
+    .btn-lg {
+        font-size: 11px;
+    }
+
+    .getButtons {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .btnMd {
+        padding: 10px 19px 10px 19px;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-lg {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 37px;
+    }
+}
