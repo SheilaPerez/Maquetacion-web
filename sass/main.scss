@@ -7,6 +7,7 @@ $danger: #FA5959;
     color: grey;
 }
 
+
 .container {
  padding: 0 30px 0 30px;
 }
@@ -69,7 +70,7 @@ $danger: #FA5959;
 }
 
 .title {
-    font-size: 45px;
+    font-size: 39px;
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 30px;
@@ -78,7 +79,7 @@ $danger: #FA5959;
 .allSubtitle {
     text-align: center;
     color: rgba(128, 128, 128, 0.646);
-    font-size: 23px;
+    font-size: 18px;
     letter-spacing: 1px;
     margin-bottom: 30px;
 }
@@ -89,15 +90,84 @@ $danger: #FA5959;
 }
 
 .btn-lg {
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: 1px;
     background-color: $primary;
+}
+
+.section {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 150px;
 }
 
 .nav {
     flex-direction: column;
     align-content: space-around;
 }
+
+.nav-tabs {
+    .nav-link {
+        margin-bottom: -1px;
+        background: none;
+        border: none;
+        color: #00000090;
+        font-size: 23px;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+.nav-tabs {
+    .nav-link.active {
+        border-bottom: 4px solid red;
+        color: black;
+    }
+}
+
+.nav-tabs {
+    border: none;
+
+    .nav-item {
+        border-top: 1px solid #00000029;
+        padding: 0 100px;
+    
+        &:nth-child(3) {
+            border-bottom: 1px solid #00000029; 
+        }
+    }
+}
+
+.imgFeature {
+    width: 100%;
+    padding-top: 110px;
+    z-index: 2;
+    position: relative;
+}
+
+.imgFeatureContainer {
+    position: relative;
+}
+
+.blueContainerFeature {
+    background-color: $primary;
+    width: 100%; 
+    height: 60%;
+    position: absolute;
+    right: 20%;
+    bottom: -10%;
+    z-index: 1;
+}
+
+.rounded-end {
+    border-bottom-right-radius: 5rem !important;
+}
+
+.bookmarkBtn {
+   display: none;
+}
+
+
 
 @media (min-width: 768px) {
     .logoBookmark{
@@ -133,7 +203,12 @@ $danger: #FA5959;
 
     .allSubtitle {
         text-align: left;
-        font-size: 13px;
+        font-size: 11px;
+    }
+
+    .estaticSubtittle {
+        padding: 0 100px;
+        text-align: center;
     }
 
     .blueContainer {
@@ -155,6 +230,41 @@ $danger: #FA5959;
     .btnMd {
         padding: 10px 19px 10px 19px;
     }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 70px;
+
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #00000029;
+
+        .nav-item{        
+            border-top: none;
+            padding: 0;
+
+            &:nth-child(3) {
+                border-bottom: none; 
+            }
+        }
+
+    }
+
+    .nav-tabs {
+
+        .nav-link {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    .bookmarkBtn {
+        display: flex;
+        background-color: $primary;
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -164,5 +274,9 @@ $danger: #FA5959;
 
     .title {
         font-size: 37px;
+    }
+
+    .estaticSubtittle {
+        padding: 0 250px;
     }
 }
