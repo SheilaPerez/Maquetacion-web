@@ -175,6 +175,44 @@
   display: none;
 }
 
+.cardContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-img-top {
+  width: 40%;
+}
+
+.card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 30px;
+}
+
+.btn-primary {
+  background-color: #5265E1;
+}
+
+.card-text {
+  color: #00000045;
+  font-size: 14px;
+}
+
+.dotsLine {
+  border-top: 5px dotted #00000038;
+  width: 100%;
+  background-color: white;
+}
+
+.card-btn {
+  padding: 10px 30px;
+  font-size: 13px;
+}
+
 @media (min-width: 768px) {
   .logoBookmark {
     width: 120px;
@@ -251,12 +289,31 @@
     font-size: 14px;
     text-align: center;
   }
+  .titleLeft {
+    text-align: left;
+  }
   .bookmarkBtn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background-color: #5265E1;
     font-size: 11px;
+  }
+  .card-text {
+    font-size: 11px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-btn {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+  .mtCardFire {
+    margin-top: 30px;
+  }
+  .mtCardOpera {
+    margin-top: 60px;
   }
 }
 
@@ -269,6 +326,16 @@
   }
   .estaticSubtittle {
     padding: 0 250px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 13px;
+  }
+  .card-btn {
+    padding: 10px 30px;
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
