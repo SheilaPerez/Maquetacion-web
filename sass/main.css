@@ -85,7 +85,7 @@
   color: rgba(128, 128, 128, 0.646);
   font-size: 18px;
   letter-spacing: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 44px;
 }
 
 .getButtons {
@@ -213,6 +213,30 @@
   font-size: 13px;
 }
 
+.accordion-button::after {
+  background-image: url(../Imagenes/icon-arrow.svg);
+}
+
+.accordion-button {
+  padding: 21px 0;
+}
+
+.faqBtn {
+  background-color: #5265E1;
+  padding: 13px 25px;
+  margin-top: 37px;
+  font-size: 15px;
+}
+
+.faqBtnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 768px) {
   .logoBookmark {
     width: 120px;
@@ -315,6 +339,13 @@
   .mtCardOpera {
     margin-top: 60px;
   }
+  .faqBtn {
+    font-size: 11px;
+    padding: 9px 15px;
+  }
+  .accordion {
+    padding: 0 102px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -336,6 +367,9 @@
   .card-btn {
     padding: 10px 30px;
     font-size: 15px;
+  }
+  .accordion {
+    padding: 0 222px;
   }
 }
 /*# sourceMappingURL=main.css.map */
