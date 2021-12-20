@@ -8,8 +8,8 @@
         <title>Bootstrap y SASS</title>
     </head>
     <body>
-       <div class="container">
-            <div class="row">
+        <div class="wrapper">
+            <div class="container">
                 <div class="menuContainer">
                     <img class="logoBookmark" src="../ej1234/Imagenes/logo-bookmark.svg">
                     <nav class="navbar navbar-expand-md navbar-light">
@@ -34,39 +34,51 @@
                         </div>
                     </nav>
                 </div> 
-               <div class="col-sm-12 col-md-6 order-md-2 col-lg-6 order-lg-2"> 
-                    <div class="heroContainer">
-                        <img class="imgHero" src="../ej1234/Imagenes/illustration-hero.svg">
-                        <div class="blueContainer rounded-start"></div>
+            </div>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 order-md-2 col-lg-6 order-lg-2 no-gutters"> 
+                        <div class="heroContainer">
+                            <img class="imgHero" src="../ej1234/Imagenes/illustration-hero.svg">
+                            <div class="blueContainer rounded-start"></div>
+                        </div>
                     </div>
-               </div>
-                <div class="col-sm-12 col-md-6 order-md-1 col-lg-6 order-lg-1">
-                    <div class="pt-5">
-                        <h1 class="title mb-40">A Simple Bookmark Manager</h1>
-                        <p class="allSubtitle ps-3 pe-3 ps-md-0">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                    </div>
-                    <div class="getButtons">
-                        <button type="button" class="btn btn-primary btn-lg pt-3 pb-3 ps-4 pe-4 me-1 shadow p-3 mb-5 rounded fw-bold pt-md-2 pb-md-2 ps-md-3 pe-md-3">Get it on Chrome</button>
-                        <button type="button" class="btn btn-light btn-lg pt-3 pb-3 ps-4 pe-4 ms-1 shadow p-3 mb-5 bg-body rounded fw-bold greyFont">Get it on Firefox</button>
+                    <div class="col-sm-12 col-md-6 order-md-1 col-lg-6 order-lg-1">
+                        <div class="pt-5">
+                            <h1 class="title mb-40">A Simple Bookmark Manager</h1>
+                            <p class="allSubtitle ps-md-0 marginContainer">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                        </div>
+                        <div class="getButtons">
+                            <button type="button" class="btn btn-primary btn-lg pt-3 pb-3 ps-4 pe-4 me-1 shadow p-3 mb-5 rounded fw-bold pt-md-2 pb-md-2 ps-md-3 pe-md-3">Get it on Chrome</button>
+                            <button type="button" class="btn btn-light btn-lg pt-3 pb-3 ps-4 pe-4 ms-1 shadow p-3 mb-5 bg-body rounded fw-bold greyFont">Get it on Firefox</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div>
-                    <h4 class="section">Features</h4>
-                    <p class="allSubtitle estaticSubtittle">Our aim to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <h4 class="section">Features</h4>
+                            <p class="allSubtitle estaticSubtittle marginContainer">Our aim to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                        </div>
+                        <div class="ms-md-5 me-md-5">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../ej1234/Imagenes/illustration-features-tab-1.svg">Simple Bookmarking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ej1234/Imagenes/illustration-features-tab-2.svg">Speedy Searching</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ej1234/Imagenes/illustration-features-tab-3.svg">Easy Sharing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Simple Bookmarking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Speedy Searching</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Easy Sharing</a>
-                    </li>
-                </ul>
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="imgFeatureContainer">
@@ -75,103 +87,136 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
-                        <h4 class="section titleLeft ps-md-2">Bookmark in one click</h4>
-                        <p class="allSubtitle ps-3 pe-3 ps-md-2">Organize your bookmarks however you like. Our simple drag-and-drop inteface gives you complete cntyrol over how manage your favorite sites.</p>
-                        <button type="button" class="btn btn-primary bookmarkBtn ms-md-2">More info</button>
+                        <h4 class="section titleLeft ps-md-3">Bookmark in one click</h4>
+                        <p class="allSubtitle marginContainer mb-md-3">Organize your bookmarks however you like. Our simple drag-and-drop inteface gives you complete cntyrol over how manage your favorite sites.</p>
+                        <button type="button" class="btn btn-primary bookmarkBtn">More info</button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <h4 class="section">Download the extension</h4>
-                <p class="allSubtitle estaticSubtittle">We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to priorize.</p>
-            </div>
-            <div class="row cardContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="section">Download the extension</h4>
+                        <p class="allSubtitle marginContainer estaticSubtittle">We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to priorize.</p>
+                    </div>
+                </div>
+                <div class="row cardsContainer">
                     <div class="col-8 col-sm-8 col-md-4 col-lg-4">
-                            <div class="card shadow p-4.5 mb-5 bg-body rounded">
-                                <img src="../ej1234/Imagenes/logo-chrome.svg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Add to Chrome</h5>
-                                    <p class="card-text text-center">Minimum version 62</p>
-                                </div>
-                                <hr class="dotsLine">
-                                <a href="#" class="btn btn-primary card-btn">Add & Install Extension</a>
+                        <div class="card shadow p-4.5 mb-5 bg-body rounded">
+                            <img src="../ej1234/Imagenes/logo-chrome.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Add to Chrome</h5>
+                                <p class="card-text text-center">Minimum version 62</p>
                             </div>
-                        </div>  
-                        <div class="col-8 col-sm-8 col-md-4 col-lg-4">
-                            <div class="card shadow p-4.5 mb-5 bg-body rounded mtCardFire">
-                                <img src="../ej1234/Imagenes/logo-firefox.svg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Add to Firefox</h5>
-                                    <p class="card-text text-center">Minimum version 55</p>
-                                </div>
-                                <hr class="dotsLine">
-                                <a href="#" class="btn btn-primary card-btn">Add & Install Extension</a>
-                            </div>
+                            <img class="dotsImg" src="Imagenes/bg-dots.svg">
+                            <a href="#" class="btn btn-primary card-btn">Add & Install Extension</a>
                         </div>
-                        <div class="col-8 col-sm-8 col-md-4 col-lg-4 mtCardOpera">
-                            <div class="card shadow p-4.5 mb-5 bg-body rounded">
-                                <img src="../ej1234/Imagenes/logo-opera.svg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Add to Opera</h5>
-                                    <p class="card-text text-center">Minimum version 46</p>                         
-                                </div>
-                                <hr class="dotsLine">
-                                <a href="#" class="btn btn-primary card-btn">Add & Install Extension</a>
+                    </div>  
+                    <div class="col-8 col-sm-8 col-md-4 col-lg-4">
+                        <div class="card shadow p-4.5 mb-5 bg-body rounded mtCardFire">
+                            <img src="../ej1234/Imagenes/logo-firefox.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Add to Firefox</h5>
+                                <p class="card-text text-center">Minimum version 55</p>
                             </div>
-                        </div>
-            </div>
-            <div class="row">
-                <h4 class="section">Frequently Asked Questions</h4>
-                <p class="allSubtitle estaticSubtittle">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
-            </div>
-            <div class="row">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What is Bookmark?
-                        </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
+                            <img class="dotsImg" src="Imagenes/bg-dots.svg">                            
+                            <a href="#" class="btn btn-primary card-btn">Add & Install Extension</a>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            How can I request a new browser?
-                        </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Is there a mobile app?
-                        </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            What about other Chromium browsers?
-                        </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
+                    <div class="col-8 col-sm-8 col-md-4 col-lg-4 mtCardOpera">
+                        <div class="card shadow p-4.5 mb-5 bg-body rounded">
+                            <img src="../ej1234/Imagenes/logo-opera.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Add to Opera</h5>
+                                <p class="card-text text-center">Minimum version 46</p>                         
+                            </div>
+                            <img class="dotsImg" src="Imagenes/bg-dots.svg">                            
+                            <a href="#" class="btn btn-primary card-btn">Add & Install Extension</a>
                         </div>
                     </div>
                 </div>
-                <div class="faqBtnContainer">
-                    <button type="button" class="btn btn-primary faqBtn ms-md-2">More info</button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="section">Frequently Asked Questions</h4>
+                        <p class="allSubtitle estaticSubtittle marginContainer">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="accordion accordion-flush marginContainer" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    What is Bookmark?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    How can I request a new browser?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Is there a mobile app?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    What about other Chromium browsers?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Minions ipsum hana dul sae po kass bappleees pepete bappleees belloo! Me want bananaaa! jiji chasy baboiii me want bananaaa! Daa. Tulaliloo aaaaaah hahaha bappleees belloo! Po kass ti aamoo! Ti aamoo! Jiji. Daa potatoooo pepete poulet tikka masala hahaha para tú wiiiii pepete wiiiii. Ti aamoo! pepete tatata bala tu aaaaaah para tú uuuhhh jeje.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqBtnContainer">
+                            <button type="button" class="btn btn-primary faqBtn ms-md-2">More info</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-       </div> 
+            <div class="container-xxl">
+                <div class="footerEmail">
+                    <p class="text-uppercase font-monospace joinedText">35.000+ already joined</p>
+                    <h2 class="emailText">Stay up-to-date with what we're doing</h2>
+                    <div class="row">
+                        <form class="was-validated formulari" novalidate>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" />
+                                <div class="invalid-feedback">Whoops, make sure it's an email.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary contactBtn mb-3">Contact us</button>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="footerLinks">
+                        <img class="footerLogo" src="../ej1234/Imagenes/logo-bookmark.svg">
+                        <a href="" class="footerLink ms-md-5 text-uppercase">features</a>
+                        <a href="" class="footerLink text-uppercase">pricing</a>
+                        <a href="" class="footerLink text-uppercase">contact</a>
+                        <div class="footerSocialMedia">
+                            <img class="footerIcon" src="Imagenes/icon-facebook.svg">
+                            <img class="footerIcon" src="Imagenes/icon-twitter.svg">
+                        </div>
+                    </div>
+            </div>
+        </div>
     </body>
 </html>
 

@@ -1,10 +1,20 @@
 @import url(/Users/Sheila/Desktop/CursoReact/sprint2/ej1234/node_modules/bootstrap/dist/css/bootstrap.css);
+.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .greyFont {
   color: grey;
 }
 
-.container {
-  padding: 0 30px 0 30px;
+.marginContainer {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.ml70 {
+  margin-left: 70px;
 }
 
 .menuContainer {
@@ -18,6 +28,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 0 100px 0;
+  padding: 0 40px;
 }
 
 .navbar {
@@ -57,7 +68,7 @@
 
 .blueContainer {
   background-color: #5265E1;
-  width: 86%;
+  width: 80%;
   height: 79%;
   position: absolute;
   top: 22%;
@@ -83,7 +94,7 @@
 .allSubtitle {
   text-align: center;
   color: rgba(128, 128, 128, 0.646);
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: 1px;
   margin-bottom: 44px;
 }
@@ -147,10 +158,11 @@
 }
 
 .imgFeature {
-  width: 100%;
+  width: 86%;
   padding-top: 110px;
   z-index: 2;
   position: relative;
+  margin-left: 40px;
 }
 
 .imgFeatureContainer {
@@ -175,7 +187,7 @@
   display: none;
 }
 
-.cardContainer {
+.cardsContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -190,7 +202,7 @@
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  padding: 30px;
+  padding: 27px;
 }
 
 .btn-primary {
@@ -202,15 +214,10 @@
   font-size: 14px;
 }
 
-.dotsLine {
-  border-top: 5px dotted #00000038;
-  width: 100%;
-  background-color: white;
-}
-
 .card-btn {
   padding: 10px 30px;
   font-size: 13px;
+  margin-top: 30px;
 }
 
 .accordion-button::after {
@@ -237,7 +244,90 @@
           justify-content: center;
 }
 
+.footerEmail {
+  background-color: #5265E1;
+  margin-top: 100px;
+  padding: 85px 40px;
+}
+
+.joinedText {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.emailText {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  padding: 15px;
+}
+
+.contactBtn {
+  padding: 15px;
+  width: 100%;
+  background-color: #FA5959;
+}
+
+.invalid-feedback {
+  padding: 10px;
+  margin-top: 0px;
+  font-size: 10px;
+  color: white;
+  background-color: #FA5959;
+}
+
+.was-validated .form-control:valid {
+  border-color: none;
+  background-image: none;
+}
+
+.footerLinks {
+  background-color: #2b2b59;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.footerLogo {
+  width: 38%;
+  margin-bottom: 24px;
+}
+
+.footerSocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerIcon {
+  margin: 30px 18px;
+}
+
 @media (min-width: 768px) {
+  .marginContainer {
+    margin-left: 49px;
+  }
   .logoBookmark {
     width: 120px;
   }
@@ -260,7 +350,8 @@
   }
   .title {
     text-align: left;
-    font-size: 35px;
+    font-size: 33px;
+    margin-left: 49px;
   }
   .allSubtitle {
     text-align: left;
@@ -271,10 +362,9 @@
     text-align: center;
   }
   .blueContainer {
-    width: 82%;
+    width: 80%;
     height: 77%;
     top: 30%;
-    left: 30%;
   }
   .btn-lg {
     font-size: 11px;
@@ -286,6 +376,7 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 49px;
   }
   .btnMd {
     padding: 10px 19px 10px 19px;
@@ -297,7 +388,6 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 0 70px;
   }
   .nav-tabs {
     border-bottom: 1px solid #00000029;
@@ -315,6 +405,8 @@
   }
   .titleLeft {
     text-align: left;
+    margin-left: 49px;
+    font-size: 27px;
   }
   .bookmarkBtn {
     display: -webkit-box;
@@ -322,15 +414,20 @@
     display: flex;
     background-color: #5265E1;
     font-size: 11px;
+    margin-left: 67px;
+  }
+  .cardContainer {
+    margin-left: 49px;
+    margin-right: 49px;
   }
   .card-text {
     font-size: 11px;
   }
   .card-title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .card-btn {
-    padding: 10px 12px;
+    padding: 9px;
     font-size: 10px;
   }
   .mtCardFire {
@@ -345,6 +442,49 @@
   }
   .accordion {
     padding: 0 102px;
+  }
+  .footerEmail {
+    padding: 85px 210px;
+  }
+  .dotsImg {
+    width: 131%;
+  }
+  .formulari {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form-control {
+    padding: 9px;
+    font-size: 10px;
+    margin-right: 90px;
+  }
+  .contactBtn {
+    padding: 5px;
+    width: 30%;
+    margin-left: 20px;
+  }
+  .footerLinks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px;
+  }
+  .footerLogo {
+    width: 26%;
+    margin-bottom: 0;
+    padding-left: 80px;
+  }
+  .footerLink {
+    font-size: 9px;
+  }
+  .footerSocialMedia {
+    margin-left: 70px;
+  }
+  .footerIcon {
+    width: 13%;
+    height: 13%;
   }
 }
 
@@ -370,6 +510,20 @@
   }
   .accordion {
     padding: 0 222px;
+  }
+  .dotsImg {
+    width: 112%;
+  }
+  .formulari {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footerSocialMedia {
+    margin-left: 210px;
   }
 }
 /*# sourceMappingURL=main.css.map */
